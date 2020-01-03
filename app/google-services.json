@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "449994375207",
+    "firebase_url": "https://sounddetect-8aff6.firebaseio.com",
+    "project_id": "sounddetect-8aff6",
+    "storage_bucket": "sounddetect-8aff6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449994375207:android:aab97ddde53a2b99628e02",
+        "android_client_info": {
+          "package_name": "com.example.sounddetect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449994375207-k9upsnn1vehvtmbgprsbutuc8vpl6hqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sounddetect",
+            "certificate_hash": "f67700912d17fa38bf41d7cde15f0b16b1296dd8"
+          }
+        },
+        {
+          "client_id": "449994375207-8llnhciuoj9rkglrbc525qmspmuodemg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-FLvU0lSNpfAkTGqDRWkct4O28ZGQfvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449994375207-8llnhciuoj9rkglrbc525qmspmuodemg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -19,6 +19,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import static android.Manifest.permission.RECORD_AUDIO;
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button stopBtn;
     SeekBar seekBar;
     TextView maxVolTv;
+    TextView userNameTv;
     TextView boardLevelBySeekTv;
     RadioButton audioRecButton;
     RadioButton mediaRecorderButton;
@@ -56,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String userName = getIntent().getStringExtra(EXTRA_MESSAGE);
+
+
         if (ContextCompat.checkSelfPermission(
                 this,
                 RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
@@ -64,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                     new String[]{(RECORD_AUDIO)},
                     RECORD_REQUEST_CODE);
         }
-
+        userNameTv = findViewById(R.id.userName);
+        userNameTv.setText(userName);
         startBtn = findViewById(R.id.start_btn);
         stopBtn = findViewById(R.id.stop_btn);
         seekBar = findViewById(R.id.seekBar);
